@@ -8,7 +8,13 @@ theo mục đích sử dụng.
 
 ## Hướng dẫn cài đặt
 
-Sau khi tải mã nguồn của thư viện, sử dụng pip để cài đặt
+Sau khi tải mã nguồn của thư viện, tiến hành build thư viện bằng lệnh
+
+```commandline
+python setup.py bdist_wheel
+```
+
+Sử dụng pip để cài đặt
 
 ```commandline
 pip install ./dist/myarrayutils-0.0.1-py3-none-any.whl
