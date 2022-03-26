@@ -37,7 +37,7 @@ myarrayutils.sort.QuickSort(arr, reverse=True)
 
 ## Documentations
 
-[Xem chi tiết] (https://phunq3107.github.io/MyArrayUtils/)
+[Xem chi tiết](https://phunq3107.github.io/MyArrayUtils/)
 
 ## Mở rộng
 

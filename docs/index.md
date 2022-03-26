@@ -1,3 +1,3 @@
 ## Documentation for MyArrayUtils
 
-[Docs for Sort module] (./sort/index.md)
+[Docs for Sort module](./sort/index.md)
