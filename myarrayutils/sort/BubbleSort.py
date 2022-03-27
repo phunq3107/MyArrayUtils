@@ -28,7 +28,7 @@ def process_Bubble_Sort(arr, cmp, comparator):
     while(has_swapped):
         has_swapped = False
         for i in range(len(arr) - num_of_iterations - 1):
-            if comparator(arr[i], arr[i+1]) <= -1:
+            if comparator(arr[i], arr[i+1]) >= 1:
                 # Swap
                 arr[i], arr[i+1] = arr[i+1], arr[i]
                 has_swapped = True
