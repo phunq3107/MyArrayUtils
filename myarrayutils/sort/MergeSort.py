@@ -7,7 +7,6 @@ def MergeSort(arr):
        average time complexity and also in worst case.
        This sorting algorithm NEED SPACE and STABLE
        :param arr: Input array
-       def mergeSort(arr): 
     if len(arr) >1: 
         mid = len(arr)//2 # Finding the mid of the array 
         L = arr[:mid] # Dividing the array elements  
