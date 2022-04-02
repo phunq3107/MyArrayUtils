@@ -1,7 +1,7 @@
 from . import utils
 
 def MergeSort(arr):
-      """
+       """
        Sort input array with MergeSort algorithm
        MergeSort belongs to the Divide and Conquer algorithm with O(n.(log(n)))
        average time complexity and also in worst case.
