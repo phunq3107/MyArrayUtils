@@ -7,13 +7,13 @@ from . import utils
        This sorting algorithm NEED SPACE and STABLE
        :param arr: Input array
        """
-       def MergeSort(arr):
+       def Mergeort(arr):
               if len(arr) >1:
                      mid = len(arr)//2
                      L = arr[:mid]
                      R = arr[mid:]
-                     mergeSort(L)
-                     mergeSort(R)
+                     MergeSort(L)
+                     MergeSort(R)
                      i = j = k = 0
                      while i < len(L) and j < len(R):
                             if L[i] < R[j]:
