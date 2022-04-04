@@ -1,5 +1,3 @@
-from . import utils
-
 def MergeSort(arr):
        """
        Sort input array with MergeSort algorithm
