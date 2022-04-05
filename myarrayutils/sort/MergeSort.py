@@ -18,19 +18,22 @@ def MergeSort(arr: list, reverse: bool = False, cmp=None):
         obj2, obj1) if reverse else cmp(obj1, obj2)
        mergeSort(arr, comparator)
        
-def mergeSort(arr, comparator):
-       if len(arr) >1:
-              mid = len(arr)//2
-              # Finding the mid of the array
-              L = arr[:mid]
+def merge(arr, l, r, comparator):  
+       if l >= r:
+              return
+       mid = (l + r)//2  
+       # Finding the mid of the array
+       merge(arr, l, m, comparator)  
+       merge(arr, m + 1, r, comparator)  
+       mergeSort(arr, l, r, m, comparator)
+       
+def mergeSort(arr, l, r, m, comparator):
+              L = arr[l : mid + 1]
               # Dividing the array elements
-              R = arr[mid:]
+              R = arr[mid + 1 : r + 1 ]
               # into 2 halves
-              mergeSort(L, comparator)
-              # Sorting the first half
-              mergeSort(R, comparator)
-              # Sorting the second halft
-              i = j = k = 0
+              i = j = 0
+              k = l
               # Copy data to temp arrays L[] and R[]
               while i < len(L) and j < len(R):
                      if comparator(L[i], R[j]) <= 0:
@@ -49,4 +52,4 @@ def mergeSort(arr, comparator):
                      arr[k] = R[j]
                      j+= 1
                      k+= 1
-              mergeSort(arr, comparator)
+              merge(arr, 0, len(arr)-1, comparator)
