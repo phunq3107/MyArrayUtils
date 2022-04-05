@@ -49,4 +49,3 @@ def mergeSort(arr, comparator):
                      arr[k] = R[j]
                      j+= 1
                      k+= 1
-              mergeSort(arr, comparator)
