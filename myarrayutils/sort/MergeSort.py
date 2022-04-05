@@ -29,7 +29,7 @@ def mergeSort(arr, comparator):
               mergeSort(L, comparator)
               # Sorting the first half
               mergeSort(R, comparator)
-              # Sorting the second halft
+              # Sorting the second half
               i = j = k = 0
               # Copy data to temp arrays L[] and R[]
               while i < len(L) and j < len(R):
@@ -49,3 +49,6 @@ def mergeSort(arr, comparator):
                      arr[k] = R[j]
                      j+= 1
                      k+= 1
+def printList(arr, comparator): 
+       for i in range(len(arr)):
+              mergeSort(arr, comparator)
