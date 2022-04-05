@@ -23,11 +23,11 @@ def merge(arr, l, r, comparator):
               return
        mid = (l + r)//2  
        # Finding the mid of the array
-       merge(arr, l, m, comparator)  
-       merge(arr, m + 1, r, comparator)  
-       mergeSort(arr, l, r, m, comparator)
+       merge(arr, l, mid, comparator)  
+       merge(arr, mid + 1, r, comparator)  
+       mergeSort(arr, l, r, mid, comparator)
        
-def mergeSort(arr, l, r, m, comparator):
+def mergeSort(arr, l, r, mid, comparator):
               L = arr[l : mid + 1]
               # Dividing the array elements
               R = arr[mid + 1 : r + 1 ]
