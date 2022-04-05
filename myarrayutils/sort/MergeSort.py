@@ -20,8 +20,7 @@ def MergeSort(arr: list, reverse: bool = False, cmp=None):
        
 def merge(arr, l, r, comparator):  
        if l >= r:
-              return
-       mid = (l + r)//2  
+              return mid = (l + r)//2  
        # Finding the mid of the array
        merge(arr, l, mid, comparator)  
        merge(arr, mid + 1, r, comparator)  
