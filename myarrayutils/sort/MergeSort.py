@@ -33,7 +33,7 @@ def mergeSort(arr, comparator):
               i = j = k = 0
               # Copy data to temp arrays L[] and R[]
               while i < len(L) and j < len(R):
-                     if comparator(L[i], R[j]) < 0:
+                     if comparator(L[i], R[j]) <= 0:
                             arr[k] = L[i]
                             i+= 1
                      else:
@@ -49,3 +49,4 @@ def mergeSort(arr, comparator):
                      arr[k] = R[j]
                      j+= 1
                      k+= 1
+              mergeSort(arr, comparator)
