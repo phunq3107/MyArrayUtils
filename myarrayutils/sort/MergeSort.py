@@ -11,12 +11,12 @@ def MergeSort(arr: list, reverse: bool = False, cmp=None):
        
        :param cmp:
        """
-       if not cmp:
+    if not cmp:
               cmp = utils.defaultComparator
-
-       def comparator(obj1, obj2): return cmp(obj2, obj1)
-       if reverse else cmp(obj1, obj2)
-       MergeSort(arr, comparator)
+              
+    def comparator(obj1, obj2): return cmp(
+        obj2, obj1) if reverse else cmp(obj1, obj2)
+    MergeSort(arr, comparator)
        
 def mergeSort(arr, comparator):
        if len(arr) >1:
