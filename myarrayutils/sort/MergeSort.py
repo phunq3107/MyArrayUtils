@@ -26,9 +26,9 @@ def mergeSort(arr, comparator):
               # Dividing the array elements
               R = arr[mid:]
               # into 2 halves
-              mergeSort(L)
+              mergeSort(L, comparator)
               # Sorting the first half
-              mergeSort(R)
+              mergeSort(R, comparator)
               # Sorting the second half
               i = j = k = 0
               # Copy data to temp arrays L[] and R[]
