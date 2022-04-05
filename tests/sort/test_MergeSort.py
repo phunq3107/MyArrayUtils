@@ -15,8 +15,9 @@ def test_MergeSort_empty_array_with_reverse():
     assert arr == expected
 
     
-def test_MergeSort_int_array_with_reverse():
-    arr = [1, 4, 77, 6, 12, 5, 24]
-    expected = [77, 24, 12, 6, 5, 4, 1]
-    sort.MergeSort(arr, reverse=True)
+def test_MergeSort_int_array_with_cmp():
+    arr = [1, 4, 77, 5, 6, 12, 24]
+    expected = [1, 4, 5, 6, 12, 24, 77]
+    def cmp(x, y): return -1 if x < y else 1 if x > y else 0
+    sort.MergeSort(arr, cmp=cmp)
     assert arr == expected
