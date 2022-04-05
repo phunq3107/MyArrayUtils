@@ -14,8 +14,7 @@ def MergeSort(arr: list, reverse: bool = False, cmp=None):
        if not cmp:
               cmp = utils.defaultComparator
 
-       def comparator(obj1, obj2): return cmp(
-        obj2, obj1) if reverse else cmp(obj1, obj2)
+       comparator = lambda obj1, obj2: cmp(obj2, obj1) if reverse else cmp(obj1, obj2)
        mergeSort(arr, comparator)
        
 def mergeSort(arr, comparator):
