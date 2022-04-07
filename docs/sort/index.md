@@ -35,6 +35,29 @@ Hàm được hiện thực có xem xét số lần hoán đổi phần tử tro
 ## Heap sort
 
 ## Insertion sort
+Thuật toán sắp xếp chèn (Insertion Sort) là thuật toán sắp xếp hoạt động tương tự cách chúng ta sắp xếp các quân bài trên tay trong một trò chơi bài.
+
+Để sắp xếp theo đúng trật tự, người chơi sẽ rút lần lượt từ quân bài thứ 2, sau đó so với các quân bài đứng trước nó để chèn vào vị trí thích hợp.
+
+Tóm lại, sắp xếp chèn là thuật toán sắp xếp đặt một phần tử chưa được sắp xếp vào vị trí thích hợp của nó trong mỗi lần lặp.
+Hàm có cú pháp như sau:
+```commandline
+myarrayutils.sort.InsertionSort(arr)
+```
+Với arr là dữ liệu cần sắp xếp, có thể là một List hay một Dictionaries ...
+Kiểu dữ liệu trả về là tương tự như biến arr.
+
+Ngoài ra, hàm còn có hai đầu vào mở rộng để người dùng sử dụng cho nhiều mục đích khác:
+
+cmp: nếu người dùng không chỉ định, hàm sẽ sử dụng phép so sánh đại số bình thường. Người dùng cần quan tâm tham số này khi thao tác trên các cấu trúc dữ liệu có nhiều thuộc tính. (VD tham số đầu vào là một dict có 3 thuộc tính, và cần một quy trình nhiều bước để xác định một giá trị có lớn hơn giá trị còn lại hay không, khi đó ta sẽ tạo một hàm so sánh và truyền vào thông qua tham số smp)
+
+reverse: đầu vào mặc định là false, khi reverse là False, hàm sẽ sắp xếp các dữ liệu tăng dần, nếu là True, hàm sẽ sắp xếp dữ liệu giảm dần.
+
+Lưu ý rằng giải thuật sort này là giải thuật có tính ổn định.
+
+Thuật toán sắp xếp chèn được sử dụng trong các trường hợp:
+- Mảng có ít phần tử
+- Mảng gần như đã được sắp xếp, chỉ một vài phần tử bị đặt sai chỗ
 
 ## Merge sort
 
@@ -43,6 +66,25 @@ Hàm được hiện thực có xem xét số lần hoán đổi phần tử tro
 ## Selection sort
 
 ## Shell sort
+**Shell Sort** là một giải thuật sắp xếp mang lại hiệu quả cao dựa trên giải thuật **sắp xếp chèn (Insertion Sort)**. Giải thuật này tránh các trường hợp phải tráo đổi vị trí của hai phần tử xa nhau trong giải thuật sắp xếp chọn (nếu như phần tử nhỏ hơn ở vị trí bên phải khá xa so với phần tử lớn hơn bên trái).
 
+Đầu tiên, giải thuật này sử dụng giải thuật sắp xếp chọn trên các phần tử có khoảng cách xa nhau, sau đó sắp xếp các phần tử có khoảng cách hẹp hơn. Khoảng cách này còn được gọi là **khoảng (interval)**.
+
+**interval** sẽ nhận giá trị lần lượt là n/2, n/4, n/8 cho đến khi interval = 1. (với n là độ dài của mảng)
+
+Hàm có cú pháp như sau:
+```commandline
+myarrayutils.sort.ShellSort(arr)
+```
+Với arr là dữ liệu cần sắp xếp, có thể là một List hay một Dictionaries ...
+Kiểu dữ liệu trả về là tương tự như biến arr.
+
+Ngoài ra, hàm còn có hai đầu vào mở rộng để người dùng sử dụng cho nhiều mục đích khác:
+
+cmp: nếu người dùng không chỉ định, hàm sẽ sử dụng phép so sánh đại số bình thường. Người dùng cần quan tâm tham số này khi thao tác trên các cấu trúc dữ liệu có nhiều thuộc tính. (VD tham số đầu vào là một dict có 3 thuộc tính, và cần một quy trình nhiều bước để xác định một giá trị có lớn hơn giá trị còn lại hay không, khi đó ta sẽ tạo một hàm so sánh và truyền vào thông qua tham số smp)
+
+reverse: đầu vào mặc định là false, khi reverse là False, hàm sẽ sắp xếp các dữ liệu tăng dần, nếu là True, hàm sẽ sắp xếp dữ liệu giảm dần.
+
+Lưu ý rằng giải thuật sort này là giải thuật không có tính ổn định.
 
 
