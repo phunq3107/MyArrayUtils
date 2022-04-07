@@ -29,8 +29,8 @@ def process_MergeSort(array, comparator):
         M = array[r:]
 
         # Sort the two halves
-        process_MergeSort(L)
-        process_MergeSort(M)
+        process_MergeSort(L, comparator)
+        process_MergeSort(M, comparator)
 
         i = j = k = 0
 
