@@ -1,7 +1,7 @@
 from . import utils
 
 
-def MergeSort(arr: list, reverse: bool = False, cmp=None):
+def MergeSort(array: list, reverse: bool = False, cmp=None):
     """
     Sort input array with MergeSort algorithm
     MergeSort belongs to the Divide and Conquer algorithm with O(n.(log(n)))
