@@ -31,10 +31,10 @@ def MergeSort(arr: list, reverse: bool = False, cmp=None):
 
     def comparator(obj1, obj2): return cmp(
         obj2, obj1) if reverse else cmp(obj1, obj2)
-    mergeSort(arr, comparator)
+    MergeSort(arr, comparator)
 
 
-def mergeSort(array, comparator):
+def MergeSort(array, comparator):
     if len(array) > 1:
 
         #  r is the point where the array is divided into two subarrays
@@ -43,8 +43,8 @@ def mergeSort(array, comparator):
         M = array[r:]
 
         # Sort the two halves
-        mergeSort(L)
-        mergeSort(M)
+        MergeSort(L)
+        MergeSort(M)
 
         i = j = k = 0
 
