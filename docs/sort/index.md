@@ -62,10 +62,11 @@ Thuật toán sắp xếp chèn được sử dụng trong các trường hợp:
 ## Merge sort
 Sắp xếp trộn (merge sort) là một thuật toán sắp xếp để sắp xếp các danh sách hoặc bất kỳ cấu trúc dữ liệu nào có thể truy cập tuần tự theo một trật tự nào đó. Thuật toán này là một ví dụ tương đối điển hình của lối thuật toán chia để trị.
 
-Sắp xếp trộn hoạt động qua 2 bước : 
- 1.Chia danh sách chưa được sắp xếp thành n danh sách con, mỗi danh sách chứa một phần tử (danh sách một phần tử được coi là đã sắp xếp).
+     Sắp xếp trộn hoạt động qua 2 bước : 
+
+ 1 .Chia danh sách chưa được sắp xếp thành n danh sách con, mỗi danh sách chứa một phần tử (danh sách một phần tử được coi là đã sắp xếp).
  
- 2.Liên tục hợp nhất các danh sách con để tạo ra các danh sách con được sắp xếp mới cho đến khi chỉ còn lại một danh sách con -> đây sẽ là danh sách được sắp xếp.
+ 2 .Liên tục hợp nhất các danh sách con để tạo ra các danh sách con được sắp xếp mới cho đến khi chỉ còn lại một danh sách con -> đây sẽ là danh sách được sắp xếp.
  
 Hàm có cú pháp như sau:
 ```commandline
