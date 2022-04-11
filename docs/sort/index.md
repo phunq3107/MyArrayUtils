@@ -64,7 +64,8 @@ Sắp xếp trộn (merge sort) là một thuật toán sắp xếp để sắp 
 
 Sắp xếp trộn hoạt động qua 2 bước : 
  1.Chia danh sách chưa được sắp xếp thành n danh sách con, mỗi danh sách chứa một phần tử (danh sách một phần tử được coi là đã sắp xếp).
- 2.Liên tục hợp nhất các danh sách con để tạo ra các danh sách con được sắp xếp mới cho đến khi chỉ còn lại một danh sách con. Đây sẽ là danh sách được sắp xếp.
+ 
+ 2.Liên tục hợp nhất các danh sách con để tạo ra các danh sách con được sắp xếp mới cho đến khi chỉ còn lại một danh sách con -> đây sẽ là danh sách được sắp xếp.
  
 Hàm có cú pháp như sau:
 ```commandline
